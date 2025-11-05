@@ -19,7 +19,4 @@ else
     fi
 fi
 
-envsubst < /etc/pgbouncer/pgbouncer.ini.tmpl > /etc/pgbouncer/pgbouncer.ini
-envsubst < /etc/pgbouncer/auth_file.txt.tmpl > /etc/pgbouncer/auth_file.txt
-
 exec /usr/bin/pgbouncer /etc/pgbouncer/pgbouncer.ini
